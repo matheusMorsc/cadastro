@@ -5,7 +5,7 @@ require_once dirname(path: __DIR__) . '/config.php';
 
 $con = bd_Conexao(host: DB_HOST, user: DB_USER, pass: DB_PASS, db: DB_NAME);
 
-$sql = "SELECT id, nome, email, telefone, foto_perfil, nome_documento, created_at
+$sql = "SELECT id, nome, email, telefone, foto_perfil, nome_documento
         FROM pessoas
         ORDER BY id DESC";
 
